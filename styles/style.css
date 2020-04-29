@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+img{
+  max-width: 100%;
 }
 
 .content{
@@ -9,14 +14,22 @@
   margin: 0 5%;
 }
 
+.bg-content{
+  background: #23303E;
+}
+
 .overlay{
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(0, 0, 0, .5);
   width: 100%;
   height: 100%;
 }
 
 .header{
-  background: url('../images/jon-snow.jpg') no-repeat;
+  height: 450px;
+}
+
+.header-got{
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('../assets/images/got-header.jpg') no-repeat center;
   background-size: cover;
 }
 
@@ -29,10 +42,11 @@
   border-radius: 50px;
   text-decoration: none;
   font-weight: bold;
+  font-size: 14px;
 }
 
 .btn-yellow{
-  background: yellow;
+  background: #F9BD69;
   color: black;
 }
 
@@ -40,6 +54,12 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-top: 30px;
+}
+
+.menu h1{
+  font-size: 1em;
+  color: #fff;
 }
 
 .menu nav ul{
@@ -48,46 +68,126 @@
 }
 
 .menu nav ul li{
-  margin-left: 10px;
+  margin-left: 20px;
+}
+
+.menu nav ul li a{
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.menu nav ul li.active{
+  border-bottom: 1px solid #F9BD69;
+}
+
+.menu nav ul li.active a{
+  font-weight: bold;
 }
 
 .header-content{
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .header-content h2{
   margin-bottom: 20px;
+  color: #fff;
 }
 
 .header-content p{
-  font-size: 14px;
+  font-size: 11px;
   margin-bottom: 20px;
+  max-width: 550px;
+  color: #ccc;
 }
 
-.content-page h3{
+.content-page{
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.content-page h2{
   margin-bottom: 50px;
+  color: #fff;
 }
 
-.content-page h3::after{
+.content-page h2::after{
   display: block;
-  width: 100px;
-  height: 2px;
-  background: yellow;
+  width: 170px;
+  height: 3px;
+  background: #F9BD69;
   content: '';
   border-radius: 50px;
+  margin-top: 10px;
 
+}
+
+.list-movies{
+  display: flex;
+  justify-content: space-between;
 }
 
 .movie{
-  width: 200px;
-  height: 250px;
-  background: black;
+  width: 270px;
+  height: 300px;
   border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.movie figure{
+  width: 100%;
+  height: 100%;
+}
+
+.movie img{
+  object-fit: cover;
+  height: 100%;
+}
+
+.movie-content{
+  position: absolute;
+  top: 0;
+  display: flex;
+  padding: 15px;
+}
+
+.tag{
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  border-radius: 5px;
+  font-size: 12px;
+  color: #fff;
+}
+
+.desc-movie{
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+}
+
+.desc-movie h3, p{
+  color: #fff;
+}
+
+.desc-movie h3{
+  font-weight: 400;
+}
+
+.desc-movie p{
+  font-size: 12px;
+  margin-top: 7.5px;
+  font-weight: 300;
 }
 
 .footer{
-  background: black;
+  background: #1A2530;
   width: 100%;
   height: 300px;
-  margin-top: 100px;
 }

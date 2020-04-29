@@ -5,39 +5,83 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Evolution Movies - Series</title>
   <link rel="stylesheet" href="styles/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="header">
+  <header class="header header-got">
     <div class="overlay">
       <div class="content">
         <div class="menu">
           <h1>Evolution Movies</h1>
           <nav>
             <ul>
-              <li>Inicio</li>
-              <li>Filmes</li>
-              <li>Séries</li>
-              <li>Categorias</li>
-              <li>Fale Conosco</li>
+              <li><a href="/">Inicio</a></li>
+              <li><a href="/">Filmes</a></li>
+              <li class="active"><a href="/">Séries</a></li>
+              <li><a href="/">Categorias</a></li>
+              <li><a href="/">Fale Conosco</a></li>
             </ul>
           </nav>
         </div>
 
         <div class="header-content">
           <h2>Game Of Thrones</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed velit tortor, porttitor id pharetra eu, aliquet in nisl. Aliquam non eros libero. Morbi id luctus ligula. Nunc dolor sapien, ullamcorper id lacus at, feugiat condimentum turpis. Vivamus id rutrum tortor. Suspendisse potenti.</p>
+          <p>Game of Thrones conta a históra de um lugar onde uma força destruiu o equilíbrio das estações, há muito tempo. Em uma terra onde os verões podem durar vários anos e o inverno toda uma vida, as reivindicações e as forças sobrenaturais correm as portas do Reino dos Sete Reinos. A irmandade da Patrulha da Noite busca proteger o reino de cada criatura que pode vir de lá da Muralha, mas já não tem os recursos necessários para garantir a segurança de todos.</p>
           <a href="#" class="btn btn-yellow">Assistir Agora</a>
         </div>
       </div>
     </div>
   </header>
 
-  <section class="content-page">
+  <section class="content-page bg-content">
     <div class="content">
-      <h3>Series</h3>
+      <h2>Series</h2>
 
-      <div class="">
-        <article class="movie"></article>
+      <div class="list-movies">
+        <article class="movie">
+          <figure>
+            <img src="./assets/images/the-good-doctor.jpg">
+          </figure>
+          <div class="movie-content overlay">
+            <div class="tag">
+              <span>Mais vistos</span>
+            </div>
+            <div class="desc-movie">
+              <h3>The Good Doctor</h3>
+              <p>Drama médico</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="movie">
+          <figure>
+            <img src="./assets/images/got.jpg">
+          </figure>
+          <div class="movie-content overlay">
+            <div class="tag">
+              <span>Mais vistos</span>
+            </div>
+            <div class="desc-movie">
+              <h3>Game Of Thrones</h3>
+              <p>Ficção Ciêntifica</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="movie">
+          <figure>
+            <img src="./assets/images/vis-a-vis.jpg">
+          </figure>
+          <div class="movie-content overlay">
+            <div class="tag">
+              <span>Mais vistos</span>
+            </div>
+            <div class="desc-movie">
+              <h3>Vis a Vis</h3>
+              <p>Drama</p>
+            </div>
+          </div>
+        </article>
       </div>
     </div>
   </section>
