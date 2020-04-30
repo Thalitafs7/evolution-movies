@@ -1,0 +1,172 @@
+
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+ body{
+  background: #1A2530;
+}
+.menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 20px;
+
+  margin-right: 18%;
+  margin-left: 3%;
+}
+.menu h1{
+  font-size: 14px;
+  color: #fff;
+  padding-left: 15%;
+}
+.menu nav ul{
+  display: flex;
+  list-style: none;
+}
+.menu nav ul li{
+  margin-left: 20px;
+  padding-right: 20px;
+}
+.menu nav ul li a{
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  text-decoration: none;
+}
+.menu nav ul li.active{
+  border-bottom: 1px solid #F9BD69;
+  font-size: 14px;
+}
+.sec{
+  margin-top: -20px;
+  float: left;
+  position: fixed;
+}
+.form {
+  margin: inherit;
+  color: #A9B7C1;
+  padding-left: 230px;
+  border: none;
+  font-size: 20px;
+}
+.form h2{
+  font-size: 20px;
+  color: #A9B7C1;
+  padding-top: 60px;
+  line-height: 60px;
+}
+
+form fieldset span{
+  color: white;
+  text-decoration: none;
+  border: none;
+  padding: 10px 0;
+  line-height: 30px;
+  font-size: 15px;
+}
+form fieldset{
+  border: none;
+}
+form fieldset input{
+  background: #2b3540;
+  border: 0;
+  padding: 8px;
+  width: 450px;
+  display: block;
+}
+form fieldset textarea{
+  background: #2b3540;
+  border: 0;
+  padding: 2px;
+  width: 450px;
+  display: block;
+  margin-bottom: 20px;
+}
+.botao{
+    padding: 12px;
+    display: flex;
+    width: 450px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    background: #F9BD69;
+    color: black;
+}
+aside figure img {
+  margin-top: -70px;
+
+  position: absolute;
+  top: 170px;
+  margin-left: 60%;
+  width: 400px;
+  height: 400px;
+}
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 5%;
+  background: #141C25;
+  color: #DBE1E5;
+  line-height: 26px;
+  height: 300px;
+  margin-top: 100px;
+  font-size: 13px;
+  z-index: -1;
+}
+.container{
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-top: 4%;
+  padding-bottom: 5%;
+}
+footer ul li{
+  list-style: none;
+  color: #fff;
+  font-size: 12px;
+  text-decoration: none;
+}
+.suporte{
+  float: left;
+}
+.suporte p{
+  font-size: 18px;
+}
+.sistemap{
+  float: right;
+  margin-right: 5%;
+}
+.politicas{
+  float: right;
+  margin-right: 5%;
+}
+.siga{
+  float: right;
+  margin-right: 5%;
+}
+.siga ul li{
+  display: inline;
+}
+.siga img{
+  display: inline;
+  width: 20px;
+  height: 20px;
+}
+.copy{
+  position: absolute;
+  bottom: 5%;
+  margin-left: 45%;
+  text-align: center;
+}
+ footer a{
+  color: #fff;
+  font-size: 13px;
+  text-decoration: none
+}
